@@ -5,8 +5,7 @@ CYAN = '\033[;36m'
 
 import os
 
-def menu():
-	os.system("clear")
+os.system("clear")
 print(CYAN+"""
 
       _      _      ____   __     __  ___   ____  
@@ -17,7 +16,8 @@ print(CYAN+"""
                                                   
 """)
 print(GREEN+"Creador: ╚» Sʜᴀᴅᴏᴡ Cᴀᴘᴛᴀɪɴ ☬ «╝")
-print("")
+def menu():
+	print("")
 print ("1 - GeolocalizarIP")
 print ("2 - SPAM EMAIL")
 print ("3 - Ingresar a la deep web")
