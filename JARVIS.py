@@ -1,44 +1,49 @@
+#!/usr/bin/python
+#Colores
+GREEN = '\033[32m'
+CYAN = '\033[;36m'
+
 import os
-from datetime import date
-from datetime import datetime
 
-r = "\033[31m"
-g = "\033[32m"
-y = "\033[33m"
-b = "\033[34m"
-p = "\033[35m"
-d = "\033[2;37m"
-w = "\033[0m"
+def menu():
+	os.system("clear")
+print(CYAN+"""
 
-W = f"{w}\033[1;47m"
-R = f"{w}\033[1;41m"
-G = f"{w}\033[1;42m"
-Y = f"{w}\033[1;43m"
-B = f"{w}\033[1;44m"
+      _      _      ____   __     __  ___   ____  
+     | |    / \    |  _ \  \ \   / / |_ _| / ___| 
+  _  | |   / _ \   | |_) |  \ \ / /   | |  \___ \ 
+ | |_| |  / ___ \  |  _ <    \ V /    | |   ___) |
+  \___/  /_/   \_\ |_| \_\    \_/    |___| |____/ 
+                                                  
+""")
+print(GREEN+"Creador: ╚» Sʜᴀᴅᴏᴡ Cᴀᴘᴛᴀɪɴ ☬ «╝")
+print("")
+print ("1 - GeolocalizarIP")
+print ("2 - SPAM EMAIL")
+print ("3 - Ingresar a la deep web")
+print ("4 - Hackear el pentagono y area 51")
+print ("5 - Ver tarjetas de credito A.E. Centurion")
+print ("6 - Esconder direccion IP y Geolocalizacion")
+print ("7 - Hackear usuarios de facebook y gmail")
+print ("8 - salir")
+print("")
 
-os.system("clear")
-print("Fecha y hora {}".format(datetime.now()))
-print(f"""
-
-      ##    ###    ########  ##     ## ####  ######  
-      ##   ## ##   ##     ## ##     ##  ##  ##    ## 
-      ##  ##   ##  ##     ## ##     ##  ##  ##       
-      ## ##     ## ########  ##     ##  ##   ######  
-##    ## ######### ##   ##    ##   ##   ##        ## 
-##    ## ##     ## ##    ##    ## ##    ##  ##    ## 
- ######  ##     ## ##     ##    ###    ####  ######  
-
-{b}""")
-print("Creador: ╚» Sʜᴀᴅᴏᴡ Cᴀᴘᴛᴀɪɴ ☬ «╝")
-
-#software libre #
-
-ingrese=input(": ")
-
-############################################################################################
-
-while ingrese == "" or ingrese== " ": 
-	print("Nombre  no valido")
-	ingrese=input("Ingrese nombre de la muisca: ")
-    
-#############################################################################################
+while True:
+  menu()
+  opcionMenu = input("inserta un numero: ")
+ 
+  if opcionMenu=="1":
+    print ("")
+    os.system("ls -a")
+    input("Presione enter para continuar")
+  elif opcionMenu=="2":
+    print ("")
+    input("Presione enter para continuar")
+  elif opcionMenu=="3":
+    print ("")
+    input("Presione enter para continuar")
+  elif opcionMenu=="8":
+    break
+  else:
+    print ("")
+    input("Opción incorrecta...\npulsa una tecla para continuar")
