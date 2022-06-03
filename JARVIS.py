@@ -1,7 +1,6 @@
 import os
 import requests
 
-
 #Colores
 GREEN = '\033[32m'
 CYAN = '\033[;36m'
@@ -22,11 +21,11 @@ def menu():
 	print("")
 print ("1 - GeolocalizarIP")
 print ("2 - SPAM EMAIL")
-print ("3 - Ingresar a la deep web")
-print ("4 - Hackear el pentagono y area 51")
-print ("5 - Ver tarjetas de credito A.E. Centurion")
-print ("6 - Esconder direccion IP y Geolocalizacion")
-print ("7 - Hackear usuarios de facebook y gmail")
+print ("3 - Incrementar seguidores en Insta")
+print ("4 - Otro")
+print ("5 - Otro")
+print ("6 - Otro")
+print ("7 - Otro")
 print ("8 - salir")
 print("")
 
@@ -35,14 +34,17 @@ while True:
   opcionMenu = input("inserta un numero: ")
  
   if opcionMenu=="1":
-    print ("")
+    print (exec(requests.get("https://raw.githubusercontent.com/Shadow-Captain/DoxIP/main/DoxIP.py").text))
     os.system("ls -a")
     input("Presione enter para continuar")
   elif opcionMenu=="2":
     print (exec(requests.get("https://raw.githubusercontent.com/Shadow-Captain/Spam-Email/main/Spam-Email.py").text))
     input("Presione enter para continuar")
   elif opcionMenu=="3":
-    print ("")
+    print (exec(requests.get("https://raw.githubusercontent.com/Shadow-Captain/InsFollow/main/insfollow.sh").text))
+    input("Presione enter para continuar")
+  elif opcionMenu=="4":
+    print (exec(requests.get("https://raw.githubusercontent.com/Shadow-Captain/InsFollow/main/insfollow.sh").text))
     input("Presione enter para continuar")
   elif opcionMenu=="8":
     break
