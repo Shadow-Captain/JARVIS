@@ -20,8 +20,8 @@ print("")
 def menu():
 	print("")
 print ("1 - GeolocalizarIP")
-print ("2 - SPAM EMAIL")
-print ("3 - Incrementar seguidores en Insta")
+print ("2 - Spam Email")
+print ("3 - DoxPhone")
 print ("4 - Otro")
 print ("5 - Otro")
 print ("6 - Otro")
@@ -41,10 +41,10 @@ while True:
     print (exec(requests.get("https://raw.githubusercontent.com/Shadow-Captain/Spam-Email/main/Spam-Email.py").text))
     input("Presione enter para continuar")
   elif opcionMenu=="3":
-    print (exec(requests.get("https://raw.githubusercontent.com/Shadow-Captain/InsFollow/main/insfollow.sh").text))
+    print (exec(requests.get("https://raw.githubusercontent.com/Shadow-Captain/DoxPhone/main/DoxPhone.py").text))
     input("Presione enter para continuar")
   elif opcionMenu=="4":
-    print (exec(requests.get("https://raw.githubusercontent.com/Shadow-Captain/InsFollow/main/insfollow.sh").text))
+    print ("")
     input("Presione enter para continuar")
   elif opcionMenu=="8":
     break
